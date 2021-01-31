@@ -1,0 +1,165 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: launcher-lib\n"
+"Report-Msgid-Bugs-To: http://www.libsdl.cn/\n"
+"POT-Creation-Date: 2021-01-27 14:12+0800\n"
+"PO-Revision-Date: 2021-01-27 14:13+0800\n"
+"Last-Translator: \n"
+"Language-Team: Chinese/Simplified <i18n-translation@lists.linux.net.cn>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-Bookmarks: -1,-1,-1,3,-1,-1,-1,-1,-1,-1\n"
+"X-Generator: Poedit 2.3.1\n"
+
+#: apps-res/po/app-launcher/cfg-cpp/launcher-lib/_bonus.cpp:1
+msgid "launcher"
+msgstr ""
+
+#: apps-res/po/app-launcher/cfg-cpp/launcher-lib/gui.cpp:1
+msgid "Settings"
+msgstr "设置"
+
+#: apps-res/po/app-launcher/cfg-cpp/launcher-lib/gui.cpp:3
+msgid ""
+"Turn on Bluetooth Discovery. To make kDesktop discover Launcher, you need to "
+"turn on the service."
+msgstr ""
+"开启蓝牙发现服务。若要让kDesktop发现Launcher，须要开启服务。一旦开启蓝牙发现"
+"服务，不要在“设置/Settings”中关闭蓝牙"
+
+#: apps-res/po/app-launcher/cfg-cpp/launcher-lib/gui.cpp:5
+#: apps-src/apps/launcher/gui/dialogs/home.cpp:51
+msgid "icon^Explorer"
+msgstr "资源管理器"
+
+#: apps-src/apps/launcher/gui/dialogs/explorer.cpp:124
+msgid "Local"
+msgstr "本地"
+
+#: apps-src/apps/launcher/gui/dialogs/explorer.cpp:125
+msgid "Remote"
+msgstr "远程"
+
+#: apps-src/apps/launcher/gui/dialogs/explorer.cpp:126
+msgid "$src ---> $dst"
+msgstr "$src ---> $dst"
+
+#: apps-src/apps/launcher/gui/dialogs/home.cpp:53
+msgid "launcher user remark, $explorer"
+msgstr ""
+"要复制文件，需使用Launcher自带的$explorer。\n"
+"任一时刻，最多支持一个Client。"
+
+#: apps-src/apps/launcher/gui/dialogs/home.cpp:78
+msgid "Device's SN in BLE Discovery"
+msgstr "蓝牙发现中指示该设备的SN"
+
+#: apps-src/apps/launcher/gui/dialogs/home.cpp:170
+msgid "ASCII printable characters"
+msgstr "可打印ASCII字符"
+
+#: apps-src/apps/launcher/gui/dialogs/home.cpp:172
+msgid "OK"
+msgstr "确定"
+
+#: apps-src/apps/launcher/gui/dialogs/statusbar.cpp:79
+msgid "Unhandshakse"
+msgstr "未握手"
+
+#: apps-src/apps/launcher/main.cpp:138 apps-src/apps/launcher/main.cpp:140
+#: apps-src/apps/launcher/main.cpp:142
+msgid "$count minutes"
+msgstr "$count分钟"
+
+#: apps-src/apps/launcher/main.cpp:144
+msgid "$count hours"
+msgstr "$count小时"
+
+#: apps-src/apps/launcher/main.cpp:145
+msgid "No restrictions"
+msgstr "不限制"
+
+#: apps-src/apps/launcher/main.cpp:304
+msgid "gui/scene"
+msgstr ""
+
+#~ msgid "No client, cannot copy or paste"
+#~ msgstr "没有Client，不能复制或粘贴"
+
+#~ msgid "Copy"
+#~ msgstr "复制"
+
+#~ msgid "Paste"
+#~ msgstr "粘贴"
+
+#~ msgid "Copy require select item. Paste require client copy item"
+#~ msgstr "复制需要至少远择一项。粘贴需要Client先执行复制"
+
+#~ msgid ""
+#~ "When pasting, please Must not switch $app to background, otherwise will "
+#~ "cause $app to exit illegally"
+#~ msgstr "粘贴时，请不要把$app切到后台，否则会导致$app非法退出"
+
+#~ msgid "Edit"
+#~ msgstr "编辑"
+
+#~ msgid "Multi select"
+#~ msgstr "多选"
+
+#~ msgid "New floder"
+#~ msgstr "新建文件夹"
+
+#~ msgid "Get clipboard format data"
+#~ msgstr "获取剪贴板信息"
+
+#~ msgid "About remaining $time"
+#~ msgstr "大约剩余$time"
+
+#~ msgid "$items items"
+#~ msgstr "$items个项目"
+
+#~ msgid "Input floder name"
+#~ msgstr "请输入文件夹名称"
+
+#~ msgid "Create $folder fail"
+#~ msgstr "新建文件夹“$folder”失败"
+
+#~ msgid "Paste $file fail, Cancel paste"
+#~ msgstr "粘贴$file文件时失败，中止粘贴"
+
+#~ msgid "Create $directory fail, Cancel paste"
+#~ msgstr "无法创建$directory目录，中止粘贴"
+
+#~ msgid "Get remote format fail, Cancel paste"
+#~ msgstr "无法获取远程文件源信息，中止粘贴"
+
+#~ msgid ""
+#~ "Paste $file fail, remote clipboard's content was changed. Cancel paste"
+#~ msgstr "粘贴$file文件时失败，极可能是客户端的剪贴板内容发生改变。中止粘贴"
+
+#~ msgid "Device's name in IP Discovery"
+#~ msgstr "IP发现中指示该设备的名称"
+
+#~ msgid ""
+#~ "Client has not received screen images, For example, mstsc.exe performs "
+#~ "minimization, and automatically disconnects after selected time"
+#~ msgstr ""
+#~ "Client一直不接收屏幕图像，举个例子，mstsc.exe执行最小化，将按选定的时间后"
+#~ "自动断开连接"
+
+#~ msgid "Date"
+#~ msgstr "日期"
+
+#~ msgid "file^Size"
+#~ msgstr "大小"
+
+#~ msgid "object^Name"
+#~ msgstr "名称"
+
+#~ msgid "To copy files between Server and Client, use Launcher's own explorer"
+#~ msgstr "要复制文件，需使用Launcher自带的资源管理器"

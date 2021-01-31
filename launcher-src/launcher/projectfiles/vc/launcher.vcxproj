@@ -1,0 +1,677 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{740704F5-3175-4DAE-A5A0-84B5FB80CC36}</ProjectGuid>
+    <RootNamespace>rose</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\launcher\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>../../librose;../../launcher;../../external/boost;../../external/boringssl/include;../../external/chromium;../../external/chromium/third_party/abseil-cpp;../../external/opencv;../../external/protobuf/src;../../external/tensorflow;../../external/tensorflow/tensorflow/contrib/lite/downloads/flatbuffers/include;../../external/webrtc;../../external/third_party/libyuv/include;../../../linker/include/SDL2;../../../linker/include/SDL2_image;../../../linker/include/SDL2_mixer;../../../linker/include/SDL2_ttf;../../../linker/include/kos;../../launcher/../external/freerdp/include;../../launcher/../external/freerdp/winpr/include;../../launcher/../external/freerdp/out;../../launcher/../external/freerdp/out/winpr/include;../../launcher/../external/freerdp/out/include;../../launcher/../external/freerdp/winpr/libwinpr/utils/trio;../../launcher/../external/freerdp/winpr/libwinpr/utils/.;../../launcher/../external/freerdp/channels/rdpgfx/server/..;../../launcher/../external/freerdp/channels/rdpsnd/common;../../launcher/../external/freerdp/server/shadow/.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;NOMINMAX;_CRT_SECURE_NO_DEPRECATE;BOOST_ALL_NO_LIB;WIN32_LEAN_AND_MEAN;WEBRTC_WIN;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;DCHECK_ALWAYS_ON;WITH_OPENSSL;WITH_SHADOW_KOS;__OPENCV_BUILD=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>ws2_32.lib;librose.lib;../../../linker/windows/lib/SDL2.lib;../../../linker/windows/lib/SDL2main.lib;../../../linker/windows/lib/SDL2_mixer.lib;../../../linker/windows/lib/SDL2_image.lib;../../../linker/windows/lib/SDL2_ttf.lib;crypt32.lib;iphlpapi.lib;secur32.lib;shlwapi.lib;wininet.lib;d3d11.lib;dxgi.lib;strmiids.lib;Strmbase.lib;dmoguids.lib;wmcodecdspuuid.lib;amstrmid.lib;msdmo.lib;winmm.lib;../../../linker/windows/lib/libvpx.lib;../../../linker/windows/lib/openh264.lib;../../../linker/windows/lib/ffmpeg.lib;../../../linker/windows/lib/opencv.lib;../../../linker/windows/lib/protobuf.lib;../../../linker/windows/lib/tensorflowlite.lib;../../../linker/windows/lib/chromium.lib;urlmon.lib;dbghelp.lib;rpcrt4.lib;dxguid.lib;credui.lib;propsys.lib;powrprof.lib;delayimp.lib;wbemuuid.lib;setupapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(SolutionDir)..\..\..\linker\windows\dll\SDL2.dll $(TargetDir)\SDL2.dll
+copy $(SolutionDir)..\..\..\linker\windows\dll\SDL2_mixer.dll $(TargetDir)\SDL2_mixer.dll
+copy $(SolutionDir)..\..\..\linker\windows\dll\SDL2_ttf.dll $(TargetDir)\SDL2_ttf.dll
+copy $(SolutionDir)..\..\..\linker\windows\dll\SDL2_image.dll $(TargetDir)\SDL2_image.dll
+copy $(SolutionDir)..\..\..\linker\windows\dll\ffmpeg.dll $(TargetDir)\ffmpeg.dll
+copy $(SolutionDir)..\..\..\linker\windows\dll\openh264.dll $(TargetDir)\openh264.dll</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\external\freerdp\channels\audin\server\audin.c" />
+    <ClCompile Include="..\..\external\freerdp\channels\cliprdr\cliprdr_common.c" />
+    <ClCompile Include="..\..\external\freerdp\channels\cliprdr\cliprdr_common2.cpp" />
+    <ClCompile Include="..\..\external\freerdp\channels\cliprdr\impl_cliprdr_kos.cpp" />
+    <ClCompile Include="..\..\external\freerdp\channels\cliprdr\impl_cliprdr_win.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\channels\cliprdr\server\cliprdr_main.c" />
+    <ClCompile Include="..\..\external\freerdp\channels\disp\disp_common.c" />
+    <ClCompile Include="..\..\external\freerdp\channels\disp\server\disp_main.c" />
+    <ClCompile Include="..\..\external\freerdp\channels\drdynvc\server\drdynvc_main.c" />
+    <ClCompile Include="..\..\external\freerdp\channels\echo\server\echo_main.c" />
+    <ClCompile Include="..\..\external\freerdp\channels\encomsp\server\encomsp_main.c" />
+    <ClCompile Include="..\..\external\freerdp\channels\leagor\leagor_ble.cpp" />
+    <ClCompile Include="..\..\external\freerdp\channels\leagor\leagor_common.c" />
+    <ClCompile Include="..\..\external\freerdp\channels\leagor\leagor_common2.cpp" />
+    <ClCompile Include="..\..\external\freerdp\channels\leagor\server\leagor_main.c" />
+    <ClCompile Include="..\..\external\freerdp\channels\rail\rail_common.c" />
+    <ClCompile Include="..\..\external\freerdp\channels\rail\server\rail_main.c" />
+    <ClCompile Include="..\..\external\freerdp\channels\rdpdr\server\rdpdr_main.c" />
+    <ClCompile Include="..\..\external\freerdp\channels\rdpei\rdpei_common.c" />
+    <ClCompile Include="..\..\external\freerdp\channels\rdpei\server\rdpei_main.c" />
+    <ClCompile Include="..\..\external\freerdp\channels\rdpgfx\rdpgfx_common.c" />
+    <ClCompile Include="..\..\external\freerdp\channels\rdpgfx\server\rdpgfx_main.c" />
+    <ClCompile Include="..\..\external\freerdp\channels\rdpsnd\server\rdpsnd_main.c" />
+    <ClCompile Include="..\..\external\freerdp\channels\remdesk\server\remdesk_main.c" />
+    <ClCompile Include="..\..\external\freerdp\channels\server\channels.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\cache\bitmap.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libfreerdp\cache\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\cache\brush.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libfreerdp\cache\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\cache\cache.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libfreerdp\cache\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\cache\glyph.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libfreerdp\cache\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\cache\nine_grid.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libfreerdp\cache\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\cache\offscreen.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libfreerdp\cache\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\cache\palette.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libfreerdp\cache\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\cache\pointer.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libfreerdp\cache\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\audio.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\bitmap.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libfreerdp\codec\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\clear.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\color.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\dsp.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\h264.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\interleaved.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\jpeg.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\mppc.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\ncrush.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\nsc.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\nsc_encode.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\planar.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\progressive.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\region.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libfreerdp\codec\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\rfx.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\rfx_decode.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\rfx_dwt.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\rfx_encode.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\rfx_neon.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\rfx_quantization.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\rfx_rlgr.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\xcrush.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\yuv.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\zgfx.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\common\addin.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\common\assistance.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\common\settings.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libfreerdp\common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\common\settings_getters.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\activation.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\autodetect.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\bulk.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\capabilities.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\certificate.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libfreerdp\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\channels.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libfreerdp\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\client.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\codecs.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\connection.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\display.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\errbase.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\errconnect.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\errinfo.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\fastpath.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\freerdp.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\gcc.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\graphics.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libfreerdp\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\heartbeat.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\info.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\input.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\license.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\mcs.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\message.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libfreerdp\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\metrics.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\multitransport.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\nego.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\orders.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\peer.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\proxy.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\rdp.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\redirection.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\security.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libfreerdp\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\server.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libfreerdp\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\settings.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libfreerdp\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\surface.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\timezone.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libfreerdp\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\tpdu.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\tpkt.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\transport.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\update.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\window.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\crypto\base64.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\crypto\ber.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\crypto\certificate.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libfreerdp\crypto\</ObjectFileName>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\crypto\crypto.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libfreerdp\crypto\</ObjectFileName>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\crypto\der.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\crypto\er.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\crypto\per.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\gdi\bitmap.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libfreerdp\gdi\</ObjectFileName>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\gdi\brush.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libfreerdp\gdi\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\gdi\clipping.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libfreerdp\gdi\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\gdi\dc.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\gdi\drawing.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\gdi\gdi.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\gdi\gfx.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\gdi\graphics.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libfreerdp\gdi\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\gdi\line.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\gdi\pen.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\gdi\region.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libfreerdp\gdi\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\gdi\shape.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\gdi\video.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\locale\keyboard.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\locale\keyboard_layout.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\locale\locale.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libfreerdp\locale\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\primitives.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_add.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_add_opt.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_alphaComp.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_alphaComp_opt.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_andor.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_andor_opt.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_colors.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_colors_opt.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_copy.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_set.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_set_opt.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_shift.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_shift_opt.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_sign.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_sign_opt.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_YCoCg.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_YCoCg_opt.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_YUV.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\utils\passphrase.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\utils\pcap.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\utils\profiler.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\utils\ringbuffer.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\utils\signal.c" />
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\utils\stopwatch.c" />
+    <ClCompile Include="..\..\external\freerdp\server\common\server.c" />
+    <ClCompile Include="..\..\external\freerdp\server\shadow\kos\kos_shadow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_audin.c" />
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_capture.c" />
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_channels.c" />
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_client.c" />
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_cliprdr.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_encoder.c" />
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_encomsp.c" />
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_input.c" />
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_leagor.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_lobby.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_mcevent.c" />
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_rdpgfx.c" />
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_rdpsnd.c" />
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_remdesk.c" />
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_screen.c" />
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_server.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_subsystem.c" />
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_subsystem_builtin.c" />
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_surface.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\asn1\asn1.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\bcrypt\bcrypt.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\clipboard\clipboard.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\clipboard\synthetic.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\credentials\credentials.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\credui\credui.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\crt\alignment.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\crt\buffer.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\crt\conversion.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\crt\memory.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libwinpr\crt\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\crt\string.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\crt\unicode.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\crt\utf.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\crypto\cert.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\crypto\cipher.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\crypto\crypto.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\crypto\hash.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\crypto\rand.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\dsparse\dsparse.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\error\error.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\file\file.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\file\generic.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\file\namedPipeClient.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\file\pattern.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\handle\handle.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\handle\nonehandle.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\heap\heap.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\input\keycode.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\input\scancode.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\input\virtualkey.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\interlocked\interlocked.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\io\device.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\io\io.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libwinpr\io\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\library\library.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\locale\locale.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\memory\memory.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\nt\nt.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\nt\ntstatus.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\path\path.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libwinpr\path\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\path\shell.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libwinpr\path\</ObjectFileName>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\pipe\pipe.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\pool\callback.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\pool\callback_cleanup.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\pool\cleanup_group.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\pool\io.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libwinpr\pool\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\pool\pool.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libwinpr\pool\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\pool\synch.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\pool\timer.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libwinpr\pool\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\pool\work.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\registry\registry.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\registry\registry_reg.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\rpc\midl.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_array.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_context.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_correlation.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_pointer.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_private.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_simple.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_string.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_structure.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_union.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\rpc\rpc.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\security\security.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\shell\shell.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\smartcard\smartcard.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\smartcard\smartcard_inspect.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\smartcard\smartcard_pcsc.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\smartcard\smartcard_winscard.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\sspicli\sspicli.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\synch\address.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\synch\barrier.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\synch\critical.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\synch\event.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\synch\init.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\synch\mutex.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\synch\semaphore.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\synch\sleep.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\synch\timer.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\synch\wait.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\sysinfo\sysinfo.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\thread\argv.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\thread\process.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\thread\processor.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\thread\thread.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\thread\tls.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libwinpr\thread\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\timezone\timezone.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\timezone\TimeZones.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\timezone\WindowsZones.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\cmdline.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\ArrayList.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\BipBuffer.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\BitStream.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\BufferPool.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\CountdownEvent.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\Dictionary.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\HashTable.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\LinkedList.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\ListDictionary.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\MessagePipe.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\MessageQueue.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\ObjectPool.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\PubSub.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\Queue.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\Reference.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\Stack.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\StreamPool.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\debug.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\image.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\ini.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\lodepng\lodepng.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\ntlm.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)freerdp\libwinpr\utils\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\print.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\sam.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\stream.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\strlst.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\trio\trio.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\trio\trionan.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\trio\triostr.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\winpr.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\Appender.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\BinaryAppender.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\CallbackAppender.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\ConsoleAppender.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\DataMessage.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\FileAppender.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\ImageMessage.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\Layout.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\Message.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\PacketMessage.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\wlog.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\winsock\winsock.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\wnd\wnd.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\wtsapi\wtsapi.c" />
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\wtsapi\wtsapi_win32.c" />
+    <ClCompile Include="..\..\launcher\game_config.cpp" />
+    <ClCompile Include="..\..\launcher\gui\dialogs\explorer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)gui\dialogs\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\launcher\gui\dialogs\settings.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)gui\dialogs\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\launcher\gui\dialogs\statusbar.cpp" />
+    <ClCompile Include="..\..\launcher\main.cpp" />
+    <ClCompile Include="..\..\launcher\gui\dialogs\home.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)gui\dialogs\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)gui\dialogs\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\launcher\pble2.cpp" />
+    <ClCompile Include="..\..\launcher\rdp_server_rose.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\external\freerdp\channels\cliprdr\cliprdr_common.h" />
+    <ClInclude Include="..\..\external\freerdp\channels\cliprdr\server\cliprdr_main.h" />
+    <ClInclude Include="..\..\external\freerdp\channels\disp\disp_common.h" />
+    <ClInclude Include="..\..\external\freerdp\channels\disp\server\disp_main.h" />
+    <ClInclude Include="..\..\external\freerdp\channels\drdynvc\server\drdynvc_main.h" />
+    <ClInclude Include="..\..\external\freerdp\channels\encomsp\server\encomsp_main.h" />
+    <ClInclude Include="..\..\external\freerdp\channels\leagor\leagor_common.h" />
+    <ClInclude Include="..\..\external\freerdp\channels\leagor\server\leagor_main.h" />
+    <ClInclude Include="..\..\external\freerdp\channels\rail\rail_common.h" />
+    <ClInclude Include="..\..\external\freerdp\channels\rail\server\rail_main.h" />
+    <ClInclude Include="..\..\external\freerdp\channels\rdpdr\server\rdpdr_main.h" />
+    <ClInclude Include="..\..\external\freerdp\channels\rdpei\rdpei_common.h" />
+    <ClInclude Include="..\..\external\freerdp\channels\rdpei\server\rdpei_main.h" />
+    <ClInclude Include="..\..\external\freerdp\channels\rdpgfx\rdpgfx_common.h" />
+    <ClInclude Include="..\..\external\freerdp\channels\rdpgfx\server\rdpgfx_main.h" />
+    <ClInclude Include="..\..\external\freerdp\channels\rdpsnd\server\rdpsnd_main.h" />
+    <ClInclude Include="..\..\external\freerdp\channels\remdesk\server\remdesk_main.h" />
+    <ClInclude Include="..\..\external\freerdp\channels\server\channels.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\cache\bitmap.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\cache\brush.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\cache\cache.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\cache\glyph.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\cache\palette.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\cache\pointer.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\codec\dsp.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\codec\h264.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\codec\nsc_encode.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\codec\nsc_types.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\codec\progressive.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\codec\rfx_bitstream.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\codec\rfx_constants.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\codec\rfx_decode.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\codec\rfx_differential.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\codec\rfx_dwt.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\codec\rfx_encode.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\codec\rfx_neon.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\codec\rfx_quantization.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\codec\rfx_rlgr.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\codec\rfx_types.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\activation.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\autodetect.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\bulk.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\capabilities.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\certificate.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\channels.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\client.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\connection.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\display.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\errinfo.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\fastpath.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\gcc.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\graphics.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\heartbeat.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\info.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\input.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\license.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\mcs.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\message.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\multitransport.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\nego.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\orders.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\peer.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\proxy.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\rdp.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\redirection.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\security.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\server.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\settings.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\surface.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\timezone.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\tpdu.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\tpkt.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\transport.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\update.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\window.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\gdi\brush.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\gdi\clipping.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\gdi\drawing.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\gdi\gdi.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\gdi\graphics.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\gdi\line.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\locale\liblocale.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\primitives\prim_internal.h" />
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\primitives\prim_templates.h" />
+    <ClInclude Include="..\..\external\freerdp\server\shadow\kos\kos_shadow.h" />
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_audin.h" />
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_capture.h" />
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_channels.h" />
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_client.h" />
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_cliprdr.h" />
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_encoder.h" />
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_encomsp.h" />
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_input.h" />
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_leagor.h" />
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_lobby.h" />
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_mcevent.h" />
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_rdpgfx.h" />
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_rdpsnd.h" />
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_remdesk.h" />
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_screen.h" />
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_subsystem.h" />
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_surface.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\clipboard\clipboard.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\crt\utf.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\crypto\crypto.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\file\file.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\handle\handle.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\handle\nonehandle.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\io\io.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\memory\memory.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\pipe\pipe.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\pool\pool.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\registry\registry_reg.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_array.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_context.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_correlation.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_pointer.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_private.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_simple.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_string.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_structure.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_union.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\security\security.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\smartcard\smartcard.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\smartcard\smartcard_inspect.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\smartcard\smartcard_pcsc.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\smartcard\smartcard_winscard.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\synch\synch.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\thread\thread.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\timezone\TimeZones.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\timezone\WindowsZones.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\corkscrew\backtrace.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\corkscrew\demangle.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\corkscrew\map_info.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\corkscrew\ptrace.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\corkscrew\symbol_table.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\lodepng\lodepng.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\trio\strio.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\trio\trio.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\trio\triodef.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\trio\trionan.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\trio\triop.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\trio\triostr.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\Appender.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\BinaryAppender.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\CallbackAppender.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\ConsoleAppender.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\DataMessage.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\FileAppender.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\ImageMessage.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\Layout.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\Message.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\PacketMessage.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\wlog.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\wnd\wnd.h" />
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\wtsapi\wtsapi_win32.h" />
+    <ClInclude Include="..\..\launcher\game_config.hpp" />
+    <ClInclude Include="..\..\launcher\gui\dialogs\explorer.hpp" />
+    <ClInclude Include="..\..\launcher\gui\dialogs\home.hpp" />
+    <ClInclude Include="..\..\launcher\gui\dialogs\settings.hpp" />
+    <ClInclude Include="..\..\launcher\gui\dialogs\statusbar.hpp" />
+    <ClInclude Include="..\..\launcher\pble2.hpp" />
+    <ClInclude Include="..\..\launcher\rdp_server_rose.h" />
+    <ClInclude Include="..\..\launcher\ResponseCode.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="librose.vcxproj">
+      <Project>{cd5c07cc-2e4b-4ecb-83e8-498a0624ec5f}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

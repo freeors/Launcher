@@ -1,0 +1,1737 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="gui">
+      <UniqueIdentifier>{7fdd98a3-9ff9-46a8-a25a-a1e8e71e7241}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\dialogs">
+      <UniqueIdentifier>{16293b46-8d37-4005-a537-7b9e0e7ad448}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp">
+      <UniqueIdentifier>{53a65e40-d443-42a5-ba5d-b0410059d605}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libfreerdp">
+      <UniqueIdentifier>{e8c71c0f-c5a7-43c3-a693-e92e22adefc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libfreerdp\cache">
+      <UniqueIdentifier>{be37180e-ed45-4ae4-9351-256162c49e61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libfreerdp\codec">
+      <UniqueIdentifier>{012bf25c-682b-413b-995c-a9486a35bee3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libfreerdp\common">
+      <UniqueIdentifier>{3397faa1-a371-4714-a0cd-185f55a9c928}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libfreerdp\core">
+      <UniqueIdentifier>{55af046f-4e0c-4894-b676-5a5b48d6b6d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libfreerdp\crypto">
+      <UniqueIdentifier>{a6d6926d-6a44-4fa7-82eb-d47a3259687d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libfreerdp\gdi">
+      <UniqueIdentifier>{ea12a74d-9f9b-4d5b-a0d7-699307bbe5cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libfreerdp\locale">
+      <UniqueIdentifier>{3187150b-3281-42d2-9de6-9b1b5d7b8d62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libfreerdp\primitives">
+      <UniqueIdentifier>{d4086eb0-4f08-4e6a-952c-59ea95913326}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libfreerdp\utils">
+      <UniqueIdentifier>{1ed87807-0dd8-4c42-bcf6-7205df105473}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr">
+      <UniqueIdentifier>{beaf7edb-6ca8-45b2-a444-db345497aa40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\asn1">
+      <UniqueIdentifier>{6939a0b6-53e8-4461-ad71-9dc8ee50e82c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\bcrypt">
+      <UniqueIdentifier>{6b46f149-3d7e-457d-873a-d04d72de7ea2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\clipboard">
+      <UniqueIdentifier>{83d821f7-4364-4cc5-9963-4f2834af7890}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\credentials">
+      <UniqueIdentifier>{ddec5073-5242-4194-aa76-6eb59adc87c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\credui">
+      <UniqueIdentifier>{9631b99c-d789-45c5-b482-36026c1a1c7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\crt">
+      <UniqueIdentifier>{b455cffa-d872-4147-b3a0-8676879044a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\crypto">
+      <UniqueIdentifier>{1225c219-047f-4a5a-9da3-71ec763d2846}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\dsparse">
+      <UniqueIdentifier>{9efeb13d-7718-4623-92c3-8bc72e0bc232}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\error">
+      <UniqueIdentifier>{4be26e91-4aac-49ec-82d9-96282beb7ba2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\file">
+      <UniqueIdentifier>{1d3e3870-70db-4cf6-b273-dafaf49bb7c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\handle">
+      <UniqueIdentifier>{5930d439-9c2d-4b89-83a8-7237d66781a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\heap">
+      <UniqueIdentifier>{0c72dde5-b342-4425-ba8d-83521cd2925f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\input">
+      <UniqueIdentifier>{a665d13f-96d2-421b-a7ac-bee2d38f0e76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\interlocked">
+      <UniqueIdentifier>{3c9a2510-96a0-42ee-a18c-b068384cfff8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\io">
+      <UniqueIdentifier>{8e4731f9-5ae0-49c7-91ac-10bcfe3a7543}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\library">
+      <UniqueIdentifier>{da9b9652-6f51-4d13-8316-762f3990f495}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\locale">
+      <UniqueIdentifier>{20a75582-47b3-4851-b49d-76404e90d552}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\memory">
+      <UniqueIdentifier>{97eb22db-5818-4d85-b19d-0b52f06f2c20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\nt">
+      <UniqueIdentifier>{7bd95e5d-37f2-4790-8024-c2d6bd981a08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\path">
+      <UniqueIdentifier>{b2dfcc6d-e577-48a6-ab3c-ac5ea7728e85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\pipe">
+      <UniqueIdentifier>{25fc172c-b58c-417a-8744-ab1b8846e51f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\wtsapi">
+      <UniqueIdentifier>{7e79c91d-e397-4ece-9f64-843a0bf0cef0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\wnd">
+      <UniqueIdentifier>{db8658ba-3e5f-44f2-b6d5-5a70b5ef7890}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\winsock">
+      <UniqueIdentifier>{700cdd7a-39e5-40ba-a22e-fc7d9997ffb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\utils">
+      <UniqueIdentifier>{0e98d98b-9d0f-4d46-b416-3294fb0a78ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\timezone">
+      <UniqueIdentifier>{e29e5691-4286-4a15-9c68-e60761cf70a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\thread">
+      <UniqueIdentifier>{9fbe99f4-ee43-43fc-98db-be7178d0ce65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\sysinfo">
+      <UniqueIdentifier>{a84a77c8-1be2-4f76-ae14-8018c464cae4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\synch">
+      <UniqueIdentifier>{fbda3781-c348-49e2-b391-e17bf64a171c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\sspicli">
+      <UniqueIdentifier>{a03e50b7-df56-4b26-bcd3-2fec33081123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\smartcard">
+      <UniqueIdentifier>{a099e626-77e3-4628-ba05-ddc7b59b7432}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\shell">
+      <UniqueIdentifier>{f7c01817-ff2b-4220-baab-b2207f1a9fbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\security">
+      <UniqueIdentifier>{adb67802-e31e-44d3-a93c-3d75035592ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\rpc">
+      <UniqueIdentifier>{7ffefbbd-8f61-43b6-af44-8523c81d2675}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\registry">
+      <UniqueIdentifier>{2090c610-9612-4cae-8521-e0e777a5ebef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\pool">
+      <UniqueIdentifier>{63856dac-6b60-4c0d-af13-f4791b809dc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\utils\collections">
+      <UniqueIdentifier>{9f70b5d3-468f-4aba-8f92-ad494c3bdd09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\utils\corkscrew">
+      <UniqueIdentifier>{231e87aa-bba1-4db4-9a01-03a03776e386}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\utils\lodepng">
+      <UniqueIdentifier>{5c4b6412-38d7-4669-86bd-cdbf69950d4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\utils\trio">
+      <UniqueIdentifier>{90f1a7a3-e69e-454a-b48a-8b6de68d7661}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\libwinpr\utils\wlog">
+      <UniqueIdentifier>{4791a643-58e6-4d30-bf2f-842e0f2bac7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\server">
+      <UniqueIdentifier>{0102e528-2b15-4f9b-bceb-a8b1968ef973}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels">
+      <UniqueIdentifier>{67ebc7c2-6353-4afb-b14f-2d27386b9784}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\video">
+      <UniqueIdentifier>{a9b44ac4-7bbb-4950-9f3e-c7cf35692b1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\smartcard">
+      <UniqueIdentifier>{03ff65f5-9b6f-472b-8b55-06ddceb578f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\remdesk">
+      <UniqueIdentifier>{9f5664e7-2982-4075-9f65-94d3228d7096}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\rdpsnd">
+      <UniqueIdentifier>{a0ad8b94-9f11-4f3d-92dd-c21594e21d87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\rdpgfx">
+      <UniqueIdentifier>{64a1b8b0-f6f2-42ce-ae37-53917891f773}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\rdpei">
+      <UniqueIdentifier>{f4f2b511-c861-43e5-92e3-9b6fe48eb234}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\rdpdr">
+      <UniqueIdentifier>{6400b6c2-3243-4e3b-81e2-61c45da97b75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\rdp2tcp">
+      <UniqueIdentifier>{94a1a20d-df41-46c2-817b-7f1292abc38d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\rail">
+      <UniqueIdentifier>{088f3daf-2f08-4e1b-a973-abe3feee5fc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\printer">
+      <UniqueIdentifier>{277f53a4-87f0-45fc-93f9-c06de003dedd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\geometry">
+      <UniqueIdentifier>{e034772a-876a-4746-a4b2-7a9b81c7a23e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\encomsp">
+      <UniqueIdentifier>{83ee0887-a236-40b9-bd58-a987baa9b543}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\echo">
+      <UniqueIdentifier>{7a4077ec-4f00-4fde-a350-f9933b4c1db9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\audin">
+      <UniqueIdentifier>{821e8744-288c-462a-bf88-bcb4f2bb2ba7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\cliprdr">
+      <UniqueIdentifier>{375db930-8850-41b0-a207-6abe5db705fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\disp">
+      <UniqueIdentifier>{7c5b8278-2818-4a00-b8ba-14a50cd92ec1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\drdynvc">
+      <UniqueIdentifier>{915265fd-12f7-4ec6-90fb-ddce7120caac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\drive">
+      <UniqueIdentifier>{6221e71c-bdbc-476a-af51-91f61dbfb428}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\audin\server">
+      <UniqueIdentifier>{07509831-8ee5-4774-8c34-0106c953bade}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\cliprdr\server">
+      <UniqueIdentifier>{08d7c112-b4ab-4c2d-bf14-970424de5587}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\disp\server">
+      <UniqueIdentifier>{cc86e77a-6ac9-4855-a79e-75033b41b613}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\drdynvc\server">
+      <UniqueIdentifier>{2c8933e7-5812-4cd9-b983-7e178fa5faca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\echo\server">
+      <UniqueIdentifier>{d1b53143-cda3-45f1-a253-03044c734ae9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\encomsp\server">
+      <UniqueIdentifier>{00ff0d68-996c-4090-a84a-a491ef52e0a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\rail\server">
+      <UniqueIdentifier>{25dd0eac-c291-461b-bdeb-6c109bac2d66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\rdpdr\server">
+      <UniqueIdentifier>{ae5f26bf-eb6b-47cc-9d92-a170cb8fc342}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\rdpei\server">
+      <UniqueIdentifier>{36040fea-6f86-4a15-b4c1-45d471645e64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\rdpgfx\server">
+      <UniqueIdentifier>{85b2a776-df3e-417a-8f78-b0d9f076e43f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\rdpsnd\server">
+      <UniqueIdentifier>{870e9fdd-9562-46ab-9267-b8b633d7eb3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\remdesk\server">
+      <UniqueIdentifier>{43f3e566-c003-4bfd-83a6-0fb06fee2fdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\server\common">
+      <UniqueIdentifier>{0d436428-dce7-49c7-a825-3eb668512deb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\server">
+      <UniqueIdentifier>{c2134cc6-5711-4135-b847-dfa0c0d0e406}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\server\shadow">
+      <UniqueIdentifier>{59692eac-1be6-451a-ab04-e542b3baa14d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\server\shadow\kos">
+      <UniqueIdentifier>{c03b79ec-b9d9-46f0-8ed9-ed104f63dba0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\leagor">
+      <UniqueIdentifier>{dc09e1b3-70bf-41aa-819c-84a39eac8451}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="freerdp\channels\leagor\server">
+      <UniqueIdentifier>{e34083e8-8421-4c6e-8f04-bf63378d236d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\launcher\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\launcher\gui\dialogs\home.cpp">
+      <Filter>gui\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\cache\bitmap.c">
+      <Filter>freerdp\libfreerdp\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\cache\brush.c">
+      <Filter>freerdp\libfreerdp\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\cache\cache.c">
+      <Filter>freerdp\libfreerdp\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\cache\glyph.c">
+      <Filter>freerdp\libfreerdp\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\cache\nine_grid.c">
+      <Filter>freerdp\libfreerdp\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\cache\offscreen.c">
+      <Filter>freerdp\libfreerdp\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\cache\palette.c">
+      <Filter>freerdp\libfreerdp\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\cache\pointer.c">
+      <Filter>freerdp\libfreerdp\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\audio.c">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\bitmap.c">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\clear.c">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\color.c">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\dsp.c">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\h264.c">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\interleaved.c">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\jpeg.c">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\mppc.c">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\ncrush.c">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\nsc.c">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\nsc_encode.c">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\planar.c">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\progressive.c">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\region.c">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\rfx.c">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\rfx_decode.c">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\rfx_dwt.c">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\rfx_encode.c">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\rfx_neon.c">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\rfx_quantization.c">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\rfx_rlgr.c">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\xcrush.c">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\yuv.c">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\codec\zgfx.c">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\common\addin.c">
+      <Filter>freerdp\libfreerdp\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\common\assistance.c">
+      <Filter>freerdp\libfreerdp\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\common\settings.c">
+      <Filter>freerdp\libfreerdp\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\common\settings_getters.c">
+      <Filter>freerdp\libfreerdp\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\crypto\base64.c">
+      <Filter>freerdp\libfreerdp\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\crypto\ber.c">
+      <Filter>freerdp\libfreerdp\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\crypto\certificate.c">
+      <Filter>freerdp\libfreerdp\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\crypto\crypto.c">
+      <Filter>freerdp\libfreerdp\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\crypto\der.c">
+      <Filter>freerdp\libfreerdp\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\crypto\er.c">
+      <Filter>freerdp\libfreerdp\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\crypto\per.c">
+      <Filter>freerdp\libfreerdp\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\activation.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\autodetect.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\bulk.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\capabilities.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\certificate.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\channels.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\client.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\codecs.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\connection.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\display.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\errbase.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\errconnect.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\errinfo.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\fastpath.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\freerdp.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\gcc.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\graphics.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\heartbeat.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\info.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\input.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\license.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\mcs.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\message.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\metrics.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\multitransport.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\nego.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\orders.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\peer.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\proxy.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\rdp.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\redirection.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\security.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\server.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\settings.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\surface.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\timezone.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\tpdu.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\tpkt.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\transport.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\update.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\core\window.c">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\gdi\bitmap.c">
+      <Filter>freerdp\libfreerdp\gdi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\gdi\brush.c">
+      <Filter>freerdp\libfreerdp\gdi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\gdi\clipping.c">
+      <Filter>freerdp\libfreerdp\gdi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\gdi\dc.c">
+      <Filter>freerdp\libfreerdp\gdi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\gdi\drawing.c">
+      <Filter>freerdp\libfreerdp\gdi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\gdi\gdi.c">
+      <Filter>freerdp\libfreerdp\gdi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\gdi\gfx.c">
+      <Filter>freerdp\libfreerdp\gdi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\gdi\graphics.c">
+      <Filter>freerdp\libfreerdp\gdi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\gdi\line.c">
+      <Filter>freerdp\libfreerdp\gdi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\gdi\pen.c">
+      <Filter>freerdp\libfreerdp\gdi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\gdi\region.c">
+      <Filter>freerdp\libfreerdp\gdi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\gdi\shape.c">
+      <Filter>freerdp\libfreerdp\gdi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\gdi\video.c">
+      <Filter>freerdp\libfreerdp\gdi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\locale\keyboard.c">
+      <Filter>freerdp\libfreerdp\locale</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\locale\keyboard_layout.c">
+      <Filter>freerdp\libfreerdp\locale</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\locale\locale.c">
+      <Filter>freerdp\libfreerdp\locale</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\utils\passphrase.c">
+      <Filter>freerdp\libfreerdp\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\utils\pcap.c">
+      <Filter>freerdp\libfreerdp\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\utils\profiler.c">
+      <Filter>freerdp\libfreerdp\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\utils\ringbuffer.c">
+      <Filter>freerdp\libfreerdp\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\utils\signal.c">
+      <Filter>freerdp\libfreerdp\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\utils\stopwatch.c">
+      <Filter>freerdp\libfreerdp\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_add.c">
+      <Filter>freerdp\libfreerdp\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_add_opt.c">
+      <Filter>freerdp\libfreerdp\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_alphaComp.c">
+      <Filter>freerdp\libfreerdp\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_alphaComp_opt.c">
+      <Filter>freerdp\libfreerdp\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_andor.c">
+      <Filter>freerdp\libfreerdp\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_andor_opt.c">
+      <Filter>freerdp\libfreerdp\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_colors.c">
+      <Filter>freerdp\libfreerdp\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_colors_opt.c">
+      <Filter>freerdp\libfreerdp\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_copy.c">
+      <Filter>freerdp\libfreerdp\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_set.c">
+      <Filter>freerdp\libfreerdp\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_set_opt.c">
+      <Filter>freerdp\libfreerdp\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_shift.c">
+      <Filter>freerdp\libfreerdp\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_shift_opt.c">
+      <Filter>freerdp\libfreerdp\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_sign.c">
+      <Filter>freerdp\libfreerdp\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_sign_opt.c">
+      <Filter>freerdp\libfreerdp\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_YCoCg.c">
+      <Filter>freerdp\libfreerdp\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_YCoCg_opt.c">
+      <Filter>freerdp\libfreerdp\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\prim_YUV.c">
+      <Filter>freerdp\libfreerdp\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\libfreerdp\primitives\primitives.c">
+      <Filter>freerdp\libfreerdp\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\asn1\asn1.c">
+      <Filter>freerdp\libwinpr\asn1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\bcrypt\bcrypt.c">
+      <Filter>freerdp\libwinpr\bcrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\clipboard\clipboard.c">
+      <Filter>freerdp\libwinpr\clipboard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\clipboard\synthetic.c">
+      <Filter>freerdp\libwinpr\clipboard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\credentials\credentials.c">
+      <Filter>freerdp\libwinpr\credentials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\credui\credui.c">
+      <Filter>freerdp\libwinpr\credui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\crt\alignment.c">
+      <Filter>freerdp\libwinpr\crt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\crt\buffer.c">
+      <Filter>freerdp\libwinpr\crt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\crt\conversion.c">
+      <Filter>freerdp\libwinpr\crt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\crt\memory.c">
+      <Filter>freerdp\libwinpr\crt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\crt\string.c">
+      <Filter>freerdp\libwinpr\crt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\crt\unicode.c">
+      <Filter>freerdp\libwinpr\crt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\crt\utf.c">
+      <Filter>freerdp\libwinpr\crt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\crypto\cert.c">
+      <Filter>freerdp\libwinpr\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\crypto\cipher.c">
+      <Filter>freerdp\libwinpr\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\crypto\crypto.c">
+      <Filter>freerdp\libwinpr\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\crypto\hash.c">
+      <Filter>freerdp\libwinpr\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\crypto\rand.c">
+      <Filter>freerdp\libwinpr\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\dsparse\dsparse.c">
+      <Filter>freerdp\libwinpr\dsparse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\error\error.c">
+      <Filter>freerdp\libwinpr\error</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\file\file.c">
+      <Filter>freerdp\libwinpr\file</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\file\generic.c">
+      <Filter>freerdp\libwinpr\file</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\file\namedPipeClient.c">
+      <Filter>freerdp\libwinpr\file</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\file\pattern.c">
+      <Filter>freerdp\libwinpr\file</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\handle\handle.c">
+      <Filter>freerdp\libwinpr\handle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\handle\nonehandle.c">
+      <Filter>freerdp\libwinpr\handle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\heap\heap.c">
+      <Filter>freerdp\libwinpr\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\input\keycode.c">
+      <Filter>freerdp\libwinpr\input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\input\scancode.c">
+      <Filter>freerdp\libwinpr\input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\input\virtualkey.c">
+      <Filter>freerdp\libwinpr\input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\interlocked\interlocked.c">
+      <Filter>freerdp\libwinpr\interlocked</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\io\device.c">
+      <Filter>freerdp\libwinpr\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\io\io.c">
+      <Filter>freerdp\libwinpr\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\library\library.c">
+      <Filter>freerdp\libwinpr\library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\locale\locale.c">
+      <Filter>freerdp\libwinpr\locale</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\memory\memory.c">
+      <Filter>freerdp\libwinpr\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\nt\nt.c">
+      <Filter>freerdp\libwinpr\nt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\nt\ntstatus.c">
+      <Filter>freerdp\libwinpr\nt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\path\path.c">
+      <Filter>freerdp\libwinpr\path</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\path\shell.c">
+      <Filter>freerdp\libwinpr\path</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\pipe\pipe.c">
+      <Filter>freerdp\libwinpr\pipe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\pool\callback.c">
+      <Filter>freerdp\libwinpr\pool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\pool\callback_cleanup.c">
+      <Filter>freerdp\libwinpr\pool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\pool\cleanup_group.c">
+      <Filter>freerdp\libwinpr\pool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\pool\io.c">
+      <Filter>freerdp\libwinpr\pool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\pool\pool.c">
+      <Filter>freerdp\libwinpr\pool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\pool\synch.c">
+      <Filter>freerdp\libwinpr\pool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\pool\timer.c">
+      <Filter>freerdp\libwinpr\pool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\pool\work.c">
+      <Filter>freerdp\libwinpr\pool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\registry\registry.c">
+      <Filter>freerdp\libwinpr\registry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\registry\registry_reg.c">
+      <Filter>freerdp\libwinpr\registry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\rpc\rpc.c">
+      <Filter>freerdp\libwinpr\rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\rpc\midl.c">
+      <Filter>freerdp\libwinpr\rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr.c">
+      <Filter>freerdp\libwinpr\rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_array.c">
+      <Filter>freerdp\libwinpr\rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_context.c">
+      <Filter>freerdp\libwinpr\rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_correlation.c">
+      <Filter>freerdp\libwinpr\rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_pointer.c">
+      <Filter>freerdp\libwinpr\rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_private.c">
+      <Filter>freerdp\libwinpr\rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_simple.c">
+      <Filter>freerdp\libwinpr\rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_string.c">
+      <Filter>freerdp\libwinpr\rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_structure.c">
+      <Filter>freerdp\libwinpr\rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_union.c">
+      <Filter>freerdp\libwinpr\rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\security\security.c">
+      <Filter>freerdp\libwinpr\security</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\shell\shell.c">
+      <Filter>freerdp\libwinpr\shell</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\smartcard\smartcard.c">
+      <Filter>freerdp\libwinpr\smartcard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\smartcard\smartcard_inspect.c">
+      <Filter>freerdp\libwinpr\smartcard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\smartcard\smartcard_pcsc.c">
+      <Filter>freerdp\libwinpr\smartcard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\smartcard\smartcard_winscard.c">
+      <Filter>freerdp\libwinpr\smartcard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\sspicli\sspicli.c">
+      <Filter>freerdp\libwinpr\sspicli</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\synch\address.c">
+      <Filter>freerdp\libwinpr\synch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\synch\barrier.c">
+      <Filter>freerdp\libwinpr\synch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\synch\critical.c">
+      <Filter>freerdp\libwinpr\synch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\synch\event.c">
+      <Filter>freerdp\libwinpr\synch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\synch\init.c">
+      <Filter>freerdp\libwinpr\synch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\synch\mutex.c">
+      <Filter>freerdp\libwinpr\synch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\synch\semaphore.c">
+      <Filter>freerdp\libwinpr\synch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\synch\sleep.c">
+      <Filter>freerdp\libwinpr\synch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\synch\timer.c">
+      <Filter>freerdp\libwinpr\synch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\synch\wait.c">
+      <Filter>freerdp\libwinpr\synch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\sysinfo\sysinfo.c">
+      <Filter>freerdp\libwinpr\sysinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\thread\argv.c">
+      <Filter>freerdp\libwinpr\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\thread\process.c">
+      <Filter>freerdp\libwinpr\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\thread\processor.c">
+      <Filter>freerdp\libwinpr\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\thread\thread.c">
+      <Filter>freerdp\libwinpr\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\thread\tls.c">
+      <Filter>freerdp\libwinpr\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\timezone\timezone.c">
+      <Filter>freerdp\libwinpr\timezone</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\timezone\TimeZones.c">
+      <Filter>freerdp\libwinpr\timezone</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\timezone\WindowsZones.c">
+      <Filter>freerdp\libwinpr\timezone</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\cmdline.c">
+      <Filter>freerdp\libwinpr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\debug.c">
+      <Filter>freerdp\libwinpr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\image.c">
+      <Filter>freerdp\libwinpr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\ini.c">
+      <Filter>freerdp\libwinpr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\ntlm.c">
+      <Filter>freerdp\libwinpr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\print.c">
+      <Filter>freerdp\libwinpr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\sam.c">
+      <Filter>freerdp\libwinpr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\stream.c">
+      <Filter>freerdp\libwinpr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\strlst.c">
+      <Filter>freerdp\libwinpr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\winpr.c">
+      <Filter>freerdp\libwinpr\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\ArrayList.c">
+      <Filter>freerdp\libwinpr\utils\collections</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\BipBuffer.c">
+      <Filter>freerdp\libwinpr\utils\collections</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\BitStream.c">
+      <Filter>freerdp\libwinpr\utils\collections</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\BufferPool.c">
+      <Filter>freerdp\libwinpr\utils\collections</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\CountdownEvent.c">
+      <Filter>freerdp\libwinpr\utils\collections</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\Dictionary.c">
+      <Filter>freerdp\libwinpr\utils\collections</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\HashTable.c">
+      <Filter>freerdp\libwinpr\utils\collections</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\LinkedList.c">
+      <Filter>freerdp\libwinpr\utils\collections</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\ListDictionary.c">
+      <Filter>freerdp\libwinpr\utils\collections</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\MessagePipe.c">
+      <Filter>freerdp\libwinpr\utils\collections</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\MessageQueue.c">
+      <Filter>freerdp\libwinpr\utils\collections</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\ObjectPool.c">
+      <Filter>freerdp\libwinpr\utils\collections</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\PubSub.c">
+      <Filter>freerdp\libwinpr\utils\collections</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\Queue.c">
+      <Filter>freerdp\libwinpr\utils\collections</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\Reference.c">
+      <Filter>freerdp\libwinpr\utils\collections</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\Stack.c">
+      <Filter>freerdp\libwinpr\utils\collections</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\collections\StreamPool.c">
+      <Filter>freerdp\libwinpr\utils\collections</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\lodepng\lodepng.c">
+      <Filter>freerdp\libwinpr\utils\lodepng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\Appender.c">
+      <Filter>freerdp\libwinpr\utils\wlog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\BinaryAppender.c">
+      <Filter>freerdp\libwinpr\utils\wlog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\CallbackAppender.c">
+      <Filter>freerdp\libwinpr\utils\wlog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\ConsoleAppender.c">
+      <Filter>freerdp\libwinpr\utils\wlog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\DataMessage.c">
+      <Filter>freerdp\libwinpr\utils\wlog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\FileAppender.c">
+      <Filter>freerdp\libwinpr\utils\wlog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\ImageMessage.c">
+      <Filter>freerdp\libwinpr\utils\wlog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\Layout.c">
+      <Filter>freerdp\libwinpr\utils\wlog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\Message.c">
+      <Filter>freerdp\libwinpr\utils\wlog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\PacketMessage.c">
+      <Filter>freerdp\libwinpr\utils\wlog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\wlog.c">
+      <Filter>freerdp\libwinpr\utils\wlog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\trio\trio.c">
+      <Filter>freerdp\libwinpr\utils\trio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\trio\trionan.c">
+      <Filter>freerdp\libwinpr\utils\trio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\utils\trio\triostr.c">
+      <Filter>freerdp\libwinpr\utils\trio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\winsock\winsock.c">
+      <Filter>freerdp\libwinpr\winsock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\wnd\wnd.c">
+      <Filter>freerdp\libwinpr\wnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\wtsapi\wtsapi.c">
+      <Filter>freerdp\libwinpr\wtsapi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\winpr\libwinpr\wtsapi\wtsapi_win32.c">
+      <Filter>freerdp\libwinpr\wtsapi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\channels\audin\server\audin.c">
+      <Filter>freerdp\channels\audin\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\channels\cliprdr\server\cliprdr_main.c">
+      <Filter>freerdp\channels\cliprdr\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\channels\cliprdr\cliprdr_common.c">
+      <Filter>freerdp\channels\cliprdr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\channels\disp\server\disp_main.c">
+      <Filter>freerdp\channels\disp\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\channels\disp\disp_common.c">
+      <Filter>freerdp\channels\disp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\channels\drdynvc\server\drdynvc_main.c">
+      <Filter>freerdp\channels\drdynvc\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\channels\echo\server\echo_main.c">
+      <Filter>freerdp\channels\echo\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\channels\encomsp\server\encomsp_main.c">
+      <Filter>freerdp\channels\encomsp\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\channels\rail\server\rail_main.c">
+      <Filter>freerdp\channels\rail\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\channels\rail\rail_common.c">
+      <Filter>freerdp\channels\rail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\channels\rdpdr\server\rdpdr_main.c">
+      <Filter>freerdp\channels\rdpdr\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\channels\rdpei\server\rdpei_main.c">
+      <Filter>freerdp\channels\rdpei\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\channels\rdpei\rdpei_common.c">
+      <Filter>freerdp\channels\rdpei</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\channels\rdpgfx\server\rdpgfx_main.c">
+      <Filter>freerdp\channels\rdpgfx\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\channels\rdpgfx\rdpgfx_common.c">
+      <Filter>freerdp\channels\rdpgfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\channels\rdpsnd\server\rdpsnd_main.c">
+      <Filter>freerdp\channels\rdpsnd\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\channels\remdesk\server\remdesk_main.c">
+      <Filter>freerdp\channels\remdesk\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\server\common\server.c">
+      <Filter>freerdp\server\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\channels\server\channels.c">
+      <Filter>freerdp\channels\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\launcher\rdp_server_rose.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_audin.c">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_capture.c">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_channels.c">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_client.c">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_encoder.c">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_encomsp.c">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_input.c">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_lobby.c">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_mcevent.c">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_rdpgfx.c">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_rdpsnd.c">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_remdesk.c">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_screen.c">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_server.c">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_subsystem.c">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_subsystem_builtin.c">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_surface.c">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\server\shadow\kos\kos_shadow.cpp">
+      <Filter>freerdp\server\shadow\kos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_cliprdr.cpp">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\launcher\gui\dialogs\statusbar.cpp">
+      <Filter>gui\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\launcher\game_config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\launcher\pble2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\launcher\gui\dialogs\settings.cpp">
+      <Filter>gui\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\launcher\gui\dialogs\explorer.cpp">
+      <Filter>gui\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\channels\cliprdr\impl_cliprdr_kos.cpp">
+      <Filter>freerdp\channels\cliprdr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\channels\cliprdr\impl_cliprdr_win.cpp">
+      <Filter>freerdp\channels\cliprdr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\channels\cliprdr\cliprdr_common2.cpp">
+      <Filter>freerdp\channels\cliprdr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\channels\leagor\leagor_common.c">
+      <Filter>freerdp\channels\leagor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\channels\leagor\leagor_common2.cpp">
+      <Filter>freerdp\channels\leagor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\channels\leagor\server\leagor_main.c">
+      <Filter>freerdp\channels\leagor\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\server\shadow\shadow_leagor.cpp">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\freerdp\channels\leagor\leagor_ble.cpp">
+      <Filter>freerdp\channels\leagor</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\launcher\gui\dialogs\home.hpp">
+      <Filter>gui\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\cache\bitmap.h">
+      <Filter>freerdp\libfreerdp\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\cache\brush.h">
+      <Filter>freerdp\libfreerdp\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\cache\cache.h">
+      <Filter>freerdp\libfreerdp\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\cache\glyph.h">
+      <Filter>freerdp\libfreerdp\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\cache\palette.h">
+      <Filter>freerdp\libfreerdp\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\cache\pointer.h">
+      <Filter>freerdp\libfreerdp\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\codec\dsp.h">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\codec\h264.h">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\codec\nsc_encode.h">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\codec\nsc_types.h">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\codec\progressive.h">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\codec\rfx_bitstream.h">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\codec\rfx_constants.h">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\codec\rfx_decode.h">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\codec\rfx_differential.h">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\codec\rfx_dwt.h">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\codec\rfx_encode.h">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\codec\rfx_neon.h">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\codec\rfx_quantization.h">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\codec\rfx_rlgr.h">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\codec\rfx_types.h">
+      <Filter>freerdp\libfreerdp\codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\activation.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\autodetect.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\bulk.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\capabilities.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\certificate.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\channels.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\client.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\connection.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\display.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\errinfo.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\fastpath.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\gcc.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\graphics.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\heartbeat.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\info.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\input.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\license.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\mcs.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\message.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\multitransport.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\nego.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\orders.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\peer.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\proxy.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\rdp.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\redirection.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\security.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\server.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\settings.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\surface.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\timezone.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\tpdu.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\tpkt.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\transport.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\update.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\core\window.h">
+      <Filter>freerdp\libfreerdp\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\gdi\brush.h">
+      <Filter>freerdp\libfreerdp\gdi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\gdi\clipping.h">
+      <Filter>freerdp\libfreerdp\gdi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\gdi\drawing.h">
+      <Filter>freerdp\libfreerdp\gdi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\gdi\gdi.h">
+      <Filter>freerdp\libfreerdp\gdi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\gdi\graphics.h">
+      <Filter>freerdp\libfreerdp\gdi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\gdi\line.h">
+      <Filter>freerdp\libfreerdp\gdi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\locale\liblocale.h">
+      <Filter>freerdp\libfreerdp\locale</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\primitives\prim_internal.h">
+      <Filter>freerdp\libfreerdp\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\libfreerdp\primitives\prim_templates.h">
+      <Filter>freerdp\libfreerdp\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\clipboard\clipboard.h">
+      <Filter>freerdp\libwinpr\clipboard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\crt\utf.h">
+      <Filter>freerdp\libwinpr\crt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\crypto\crypto.h">
+      <Filter>freerdp\libwinpr\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\file\file.h">
+      <Filter>freerdp\libwinpr\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\handle\handle.h">
+      <Filter>freerdp\libwinpr\handle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\handle\nonehandle.h">
+      <Filter>freerdp\libwinpr\handle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\io\io.h">
+      <Filter>freerdp\libwinpr\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\memory\memory.h">
+      <Filter>freerdp\libwinpr\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\pipe\pipe.h">
+      <Filter>freerdp\libwinpr\pipe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\pool\pool.h">
+      <Filter>freerdp\libwinpr\pool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\registry\registry_reg.h">
+      <Filter>freerdp\libwinpr\registry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_array.h">
+      <Filter>freerdp\libwinpr\rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_context.h">
+      <Filter>freerdp\libwinpr\rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_correlation.h">
+      <Filter>freerdp\libwinpr\rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_pointer.h">
+      <Filter>freerdp\libwinpr\rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_private.h">
+      <Filter>freerdp\libwinpr\rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_simple.h">
+      <Filter>freerdp\libwinpr\rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_string.h">
+      <Filter>freerdp\libwinpr\rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_structure.h">
+      <Filter>freerdp\libwinpr\rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\rpc\ndr_union.h">
+      <Filter>freerdp\libwinpr\rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\security\security.h">
+      <Filter>freerdp\libwinpr\security</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\smartcard\smartcard.h">
+      <Filter>freerdp\libwinpr\smartcard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\smartcard\smartcard_inspect.h">
+      <Filter>freerdp\libwinpr\smartcard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\smartcard\smartcard_pcsc.h">
+      <Filter>freerdp\libwinpr\smartcard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\smartcard\smartcard_winscard.h">
+      <Filter>freerdp\libwinpr\smartcard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\synch\synch.h">
+      <Filter>freerdp\libwinpr\synch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\thread\thread.h">
+      <Filter>freerdp\libwinpr\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\timezone\TimeZones.h">
+      <Filter>freerdp\libwinpr\timezone</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\timezone\WindowsZones.h">
+      <Filter>freerdp\libwinpr\timezone</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\corkscrew\backtrace.h">
+      <Filter>freerdp\libwinpr\utils\corkscrew</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\corkscrew\demangle.h">
+      <Filter>freerdp\libwinpr\utils\corkscrew</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\corkscrew\map_info.h">
+      <Filter>freerdp\libwinpr\utils\corkscrew</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\corkscrew\ptrace.h">
+      <Filter>freerdp\libwinpr\utils\corkscrew</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\corkscrew\symbol_table.h">
+      <Filter>freerdp\libwinpr\utils\corkscrew</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\lodepng\lodepng.h">
+      <Filter>freerdp\libwinpr\utils\lodepng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\Appender.h">
+      <Filter>freerdp\libwinpr\utils\wlog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\BinaryAppender.h">
+      <Filter>freerdp\libwinpr\utils\wlog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\CallbackAppender.h">
+      <Filter>freerdp\libwinpr\utils\wlog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\ConsoleAppender.h">
+      <Filter>freerdp\libwinpr\utils\wlog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\DataMessage.h">
+      <Filter>freerdp\libwinpr\utils\wlog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\FileAppender.h">
+      <Filter>freerdp\libwinpr\utils\wlog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\ImageMessage.h">
+      <Filter>freerdp\libwinpr\utils\wlog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\Layout.h">
+      <Filter>freerdp\libwinpr\utils\wlog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\Message.h">
+      <Filter>freerdp\libwinpr\utils\wlog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\PacketMessage.h">
+      <Filter>freerdp\libwinpr\utils\wlog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\wlog\wlog.h">
+      <Filter>freerdp\libwinpr\utils\wlog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\trio\strio.h">
+      <Filter>freerdp\libwinpr\utils\trio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\trio\trio.h">
+      <Filter>freerdp\libwinpr\utils\trio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\trio\triodef.h">
+      <Filter>freerdp\libwinpr\utils\trio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\trio\trionan.h">
+      <Filter>freerdp\libwinpr\utils\trio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\trio\triop.h">
+      <Filter>freerdp\libwinpr\utils\trio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\utils\trio\triostr.h">
+      <Filter>freerdp\libwinpr\utils\trio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\wnd\wnd.h">
+      <Filter>freerdp\libwinpr\wnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\winpr\libwinpr\wtsapi\wtsapi_win32.h">
+      <Filter>freerdp\libwinpr\wtsapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\channels\cliprdr\server\cliprdr_main.h">
+      <Filter>freerdp\channels\cliprdr\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\channels\cliprdr\cliprdr_common.h">
+      <Filter>freerdp\channels\cliprdr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\channels\disp\server\disp_main.h">
+      <Filter>freerdp\channels\disp\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\channels\disp\disp_common.h">
+      <Filter>freerdp\channels\disp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\channels\drdynvc\server\drdynvc_main.h">
+      <Filter>freerdp\channels\drdynvc\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\channels\encomsp\server\encomsp_main.h">
+      <Filter>freerdp\channels\encomsp\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\channels\rail\server\rail_main.h">
+      <Filter>freerdp\channels\rail\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\channels\rail\rail_common.h">
+      <Filter>freerdp\channels\rail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\channels\rdpdr\server\rdpdr_main.h">
+      <Filter>freerdp\channels\rdpdr\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\channels\rdpei\server\rdpei_main.h">
+      <Filter>freerdp\channels\rdpei\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\channels\rdpei\rdpei_common.h">
+      <Filter>freerdp\channels\rdpei</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\channels\rdpgfx\server\rdpgfx_main.h">
+      <Filter>freerdp\channels\rdpgfx\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\channels\rdpgfx\rdpgfx_common.h">
+      <Filter>freerdp\channels\rdpgfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\channels\rdpsnd\server\rdpsnd_main.h">
+      <Filter>freerdp\channels\rdpsnd\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\channels\remdesk\server\remdesk_main.h">
+      <Filter>freerdp\channels\remdesk\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\channels\server\channels.h">
+      <Filter>freerdp\channels\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\launcher\rdp_server_rose.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_audin.h">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_capture.h">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_channels.h">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_client.h">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_encoder.h">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_encomsp.h">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_input.h">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_lobby.h">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_mcevent.h">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_rdpgfx.h">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_rdpsnd.h">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_remdesk.h">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_screen.h">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_subsystem.h">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_surface.h">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\server\shadow\kos\kos_shadow.h">
+      <Filter>freerdp\server\shadow\kos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_cliprdr.h">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\launcher\game_config.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\launcher\gui\dialogs\statusbar.hpp">
+      <Filter>gui\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\launcher\pble2.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\launcher\gui\dialogs\settings.hpp">
+      <Filter>gui\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\launcher\gui\dialogs\explorer.hpp">
+      <Filter>gui\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\channels\leagor\leagor_common.h">
+      <Filter>freerdp\channels\leagor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\channels\leagor\server\leagor_main.h">
+      <Filter>freerdp\channels\leagor\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\freerdp\server\shadow\shadow_leagor.h">
+      <Filter>freerdp\server\shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\launcher\ResponseCode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

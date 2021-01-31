@@ -1,0 +1,84 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: launcher-lib\n"
+"POT-Creation-Date: 2021-06-04 20:39+0800\n"
+"PO-Revision-Date: 2016-01-03 20:34+0800\n"
+"Last-Translator: service <service@leagor.com>\n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3.1\n"
+"X-Poedit-KeywordsList: _;vgettext2\n"
+"X-Poedit-Basepath: ../../../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: apps-src/apps/launcher\n"
+"X-Poedit-SearchPath-1: apps-res/app-launcher/po/cfg-cpp/launcher-lib\n"
+
+#: apps-res/app-launcher/po/cfg-cpp/launcher-lib/_bonus.cpp:1
+msgid "launcher"
+msgstr ""
+
+#: apps-res/app-launcher/po/cfg-cpp/launcher-lib/gui.cpp:1
+msgid "Settings"
+msgstr ""
+
+#: apps-res/app-launcher/po/cfg-cpp/launcher-lib/gui.cpp:3
+msgid "Turn on Bluetooth Discovery. To make kDesktop discover Launcher, you need to turn on the service."
+msgstr ""
+
+#: apps-res/app-launcher/po/cfg-cpp/launcher-lib/gui.cpp:5
+#: apps-src/apps/launcher/gui/dialogs/home.cpp:51
+msgid "icon^Explorer"
+msgstr ""
+
+#: apps-src/apps/launcher/gui/dialogs/explorer.cpp:124
+msgid "Local"
+msgstr ""
+
+#: apps-src/apps/launcher/gui/dialogs/explorer.cpp:125
+msgid "Remote"
+msgstr ""
+
+#: apps-src/apps/launcher/gui/dialogs/explorer.cpp:126
+msgid "$src ---> $dst"
+msgstr ""
+
+#: apps-src/apps/launcher/gui/dialogs/home.cpp:53
+msgid "launcher user remark, $explorer"
+msgstr ""
+
+#: apps-src/apps/launcher/gui/dialogs/home.cpp:78
+msgid "Device's SN in BLE Discovery"
+msgstr ""
+
+#: apps-src/apps/launcher/gui/dialogs/home.cpp:170
+msgid "ASCII printable characters"
+msgstr ""
+
+#: apps-src/apps/launcher/gui/dialogs/home.cpp:172
+msgid "OK"
+msgstr ""
+
+#: apps-src/apps/launcher/gui/dialogs/statusbar.cpp:80
+msgid "Unhandshakse"
+msgstr ""
+
+#: apps-src/apps/launcher/main.cpp:222 apps-src/apps/launcher/main.cpp:224
+#: apps-src/apps/launcher/main.cpp:226
+msgid "$count minutes"
+msgstr ""
+
+#: apps-src/apps/launcher/main.cpp:228
+msgid "$count hours"
+msgstr ""
+
+#: apps-src/apps/launcher/main.cpp:229
+msgid "No restrictions"
+msgstr ""
+
+#: apps-src/apps/launcher/main.cpp:392
+msgid "gui/scene"
+msgstr ""

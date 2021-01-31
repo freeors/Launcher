@@ -1,0 +1,29 @@
+-- Note: This file is loaded automatically by the engine.
+
+local mt = {
+	__index = function(self, k)
+		if k ~= "__tostring" then
+			error("Tried to access an empty package", 2)
+		end
+	end,
+	__newindex = function()
+		error("Tried to access an empty package", 2)
+	end,
+	__metatable = "empty package",
+	__tostring = function() return "{empty package}" end,
+}
+local empty_pkg = setmetatable({}, mt)
+
+local function global()
+	function funcA(a, b)
+		return a + b + 10
+	end
+	local c = funcA(30, 40)
+end
+
+-- TODO: Currently if you require a file by different (relative) paths, each will be a different copy.
+function rose.require(pkg_name)
+	global()
+end
+
+return empty_pkg

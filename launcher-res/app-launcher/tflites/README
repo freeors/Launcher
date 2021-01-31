@@ -1,0 +1,5 @@
+This directory contains files relative tensorflowlite.
+1)*.tflite.
+2)labels.txt.
+
+This directory can override tflites locate at <res>/data/core/tflites.
